@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Header section */
+
+*{
+  box-sizing: border-box;
+}
+
+html,body{
+  margin:0;
+  padding: 0;
+  height:100vh;
+  font-family: Montsserat,Arial, Helvetica, sans-serif;
+  background-color: hsl(60, 62%, 82%);
+  overflow: auto;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width:80%;
+  color:hsl(0, 0%, 4%);
+  margin:auto;
+  border:1px solid rgb(125, 111, 111);
+  box-shadow: 2px 2px 3px rgba(0,0,0,.3);
+  border-radius:5px;
+  margin-top:15px;
+  height: 65px;
+}
+
+.container > p{
+  flex:1;
+  margin-left:10px;
+  font-size:1.2rem;
+  font-weight: bold;
+}
+
+.container > ul{
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  justify-content: flex-end;
+  height: 100%;
+  align-items: center;
+  padding:0;
+  margin:0;
+  
+}
+
+.container > ul > li{
+margin-right:10px;
+font-size:.9rem;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 2px 2px;
+width:80px;
+border-radius: 2px;
+transition: all 0.45s;
+}
+
+.container > ul > li:hover{
+  
+  background-color:rgb(10, 10, 10);
+  height:80%;
+  color:white
+  
+  }
+
+  /* Main section */
+
+.about-container{
+  position:relative;
+  top:150px;
+}
+main > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:15px;
+}
+
+.image-container> img{
+  height:200px;
+  width:200px;
+  border-radius:50%;
+}
+
+.info-container{
+  
+  font-size: .90rem;
+  width:250px;
+  }
+
+  .info-container >p>span{
+    font-weight:700;
+    font-size:.8rem;
+  }
+
+
+.contact-button,.more-button{
+  padding:10px 10px;
+  border:none;
+  background-color:rgb(211, 230, 141);
+  color:rgb(3, 3, 3);
+  cursor:pointer;
+  border-radius:4px;
+  border:1px solid rgb(99, 89, 89);
+  box-shadow: 2px 2px 3px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+  }
+.contact-button:hover,.more-button:hover{
+  background-color: rgb(24, 24, 23);
+  color:white;
+}
